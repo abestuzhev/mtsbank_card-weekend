@@ -1,0 +1,346 @@
+// These comments are only one line long each.
+$pinkish-red: #ea212e;
+$turquoise-blue: #00bcc7;
+$white: #ffffff;
+$black: #000000;
+$white-two: #fbfbfb;
+$black-two: #202020;
+$greyish-brown: #535151;
+$greyish-brown-two: #505050;
+$black-three: #181818;
+
+.mts-hash-0003a {
+  #result [class*="hidden-plastic"] {
+    display: none;
+  }
+  .mts2-plastic-card-nav__filter-collapse {
+    .mts2-creditcard-filter-control__wrapper {
+      display: flex;
+      width: 100%;
+      padding: 15px 15px;
+      flex-wrap: wrap;
+      li {
+        margin-right: 20px;
+      }
+      input[type=checkbox] + label:before {
+        margin-right: 10px;
+      }
+    }
+  }
+  .mts2-creditcard-filter-control__heading {
+    font-family: "Futura New";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 2.08;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #000000;
+  }
+  .mts2-creditcard-filter-control__wrapper {
+    background-color: transparent;
+    list-style: none;
+    padding-left: 0;
+    input[type="checkbox"] {
+      display: none;
+    }
+    label {
+      opacity: 0.7;
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 1.69;
+      letter-spacing: -0.1px;
+      text-align: left;
+      color: #000000;
+      cursor: pointer;
+    }
+    input[type=checkbox] + label:before {
+      content: url('../img/cards/mts2-cards-checkbox-un.png');
+    } /* unchecked icon */
+    input[type=checkbox] + label:before {
+      display: inline-block;
+      position: relative;
+      top: 9px;
+      margin-right: 20px;
+    } /* space between checkbox and label */
+
+    input[type=checkbox]:checked + label:before {
+      content: url('../img/cards/mts2-cards-checkbox.png');
+    } /* checked icon */
+    input[type=checkbox]:checked + label:before {
+      letter-spacing: 5px;
+    }
+  }
+  .mts2-card-creditcards__card-logos-wrapper {
+    margin-bottom: 60px;
+  }
+  .mts2-plastic-card-nav {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e2e2e2;
+    position: relative;
+    padding: 0 15px;
+    .mts2-plastic-card-nav__filter-button {
+      display: none;
+      cursor: pointer;
+      position: absolute;
+      right: 15px;
+      right: 20px;
+      top: 21px;
+    }
+    .mts2-plastic-card-nav__tab-switch {
+      padding: 20px 0;
+      color: $black;
+      opacity: 1;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -0.1px;
+      margin-right: 55px;
+    }
+    .mts2-plastic-card-nav__tab-switch.active {
+      opacity: 0.5;
+    }
+  }
+  .mts2-section-creditcard-selector {
+    padding-bottom: 180px;
+    padding-top: 10px;
+  }
+  .mts2-section-creditcard-selector__heading {
+    font-family: "Futura New";
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.06;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: #000000;
+    margin: 55px 0;
+  }
+  .mts2-card-creditcards__card-logos-wrapper {
+    .mts2-card-creditcards__card-logos-visa {
+      margin-right: 7px;
+    }
+    span {
+      opacity: 0.5;
+      font-family: "Lato";
+      font-size: 16px;
+      line-height: 1.69;
+      letter-spacing: -0.1px;
+      text-align: left;
+      margin-left: 7px;
+    }
+  }
+  .mts2-card-creditcards__plastic {
+    max-width: 347.5px;
+    width: 100%;
+    box-shadow: 0 0 15px -4px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    transition: 250ms all ease-in-out;
+  }
+  .mts2-card-creditcards__plastic-wrapper {
+  }
+  .mts2-card-creditcards__plastic_mobile {
+    position: absolute;
+    top: -67px;
+    max-width: 260px;
+  }
+  .mts2-card-creditcards:hover .mts2-card-creditcards__plastic {
+    transform: translateY(-10px);
+    box-shadow: 0px 37px 42px -5px rgba(0, 0, 0, 0.36);
+  }
+  .mts2-card-creditcards {
+    border-radius: 4px;
+    border: solid 1px #ededed;
+    color: $black;
+    background-position: center right;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 990px;
+    min-height: 262px;
+    padding: 0 69px 0;
+    transition: 500ms background-color ease-in-out;
+    margin: auto;
+    margin-bottom: 45px;
+    background-color: $white;
+    cursor: pointer;
+    position: relative;
+    margin-left: 0;
+    padding-top: 7.5%;
+    padding-bottom: 55px;
+
+    .mts2-card-creditcards__btn {
+      z-index: 10;
+      padding: 18px 37px;
+      font-family: "Futura New";
+      font-size: 17px;
+      margin-top: 45px;
+      display: block;
+      max-width: 229px;
+      text-align: center;
+      position: absolute;
+      bottom: 20px;
+      opacity: 0;
+      transition: 250ms all ease-in-out;
+      &:hover {
+        transform: translateY(-4px);
+        color: #19c3cd;
+      }
+    }
+    .mts2-card-creditcards__heading {
+      font-family: "Futura New";
+      max-width: 300px;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 1.29;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-bottom: 5px;
+      margin-top: 0;
+    }
+    .mts2-card-creditcards__text {
+      max-width: 280px;
+      opacity: 0.5;
+      font-family: 'Lato';
+      font-size: 16px;
+    }
+    .mts2-card-creditcards__subtext {
+      opacity: 0.7;
+      font-family: 'Lato';
+      font-size: 16px;
+      max-width: 200px;
+      margin-bottom: 1rem;
+    }
+    .mts2-card-creditcards__percent {
+      font-size: 38px;
+      font-family: "Futura New";
+      letter-spacing: -1px;
+      margin-bottom: 0;
+      .mts2-card-creditcards__percent-span {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Lato';
+      }
+      .mts2-card-creditcards__percent-span_3 {
+        margin-left: -3px;
+      }
+    }
+  }
+  .mts2-card-creditcards:hover .mts2-card-creditcards__percent,
+  .mts2-card-creditcards:hover .mts2-card-creditcards__text,
+  .mts2-card-creditcards:hover .mts2-card-creditcards__subtext {
+    opacity: 0;
+  }
+  .mts2-card-creditcards:hover .mts2-card-creditcards__btn {
+    opacity: 1;
+  }
+  .mts2-card-creditcards:hover {
+    color: $white;
+    background-color: $pinkish-red;
+    box-shadow: 0 25px 30px 0 rgba(149, 149, 149, 0.25);
+  }
+}
+
+@media (max-width: 1400px) {
+  .mts-hash-0003a .mts2-plastic-card-nav .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mts-hash-0003a .mts2-card-creditcards .mts2-card-creditcards__percent {
+    font-size: 30px;
+    font-family: "Futura New";
+    letter-spacing: -1px;
+    margin-bottom: 0;
+  }
+  .mts-hash-0003a .mts2-card-creditcards {
+    padding: 30px 15px;
+  }
+  .mts-hash-0003a .mts2-card-creditcards .mts2-card-creditcards__percent .mts2-card-creditcards__percent-span {
+    font-size: 14px;
+  }
+  .mts-hash-0003a .mts2-card-creditcards .mts2-card-creditcards__btn {
+    left: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mts-hash-0003a .mts2-creditcard-filter-control__wrapper label {
+    font-size: 14px;
+  }
+  .mts-hash-0003a .mts2-card-creditcards {
+    padding: 130px 15px 30px;
+    text-align: center;
+  }
+  .mts-hash-0003a .mts2-card-creditcards .mts2-card-creditcards__heading {
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  .mts-hash-0003a .mts2-section-creditcard-selector__heading {
+    font-size: 30px;
+    margin: 38px 0 116px;
+  }
+  .mts-hash-0003a .mts2-card-creditcards__card-logos-wrapper {
+    margin-bottom: 25px;
+  }
+  div.row.mts2-card-creditcards__btn-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mts-hash-0003a .mts2-card-creditcards .mts2-card-creditcards__btn {
+    left: inherit;
+  }
+  .mts-hash-0003a .mts2-card-creditcards .mts2-card-creditcards__subtext {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .mts-hash-0003a .mts2-card-creditcards {
+    margin-bottom: 118px;
+  }
+}
+@media (min-width: 768px) {
+  .show.mts2-plastic-card-nav__filter-collapse {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .mts-hash-0003a .mts2-creditcard-filter {
+    display: none;
+  }
+  .show.mts2-plastic-card-nav__filter-collapse {
+    display: block;
+  }
+  .mts-hash-0003a .mts2-plastic-card-nav .mts2-plastic-card-nav__filter-button {
+    display: block;
+  }
+  .mts-hash-0003a .mts2-card-creditcards {
+    padding: 70px 15px 30px;
+    text-align: center;
+  }
+  .mts-hash-0003a .mts2-card-creditcards__plastic_mobile {
+    position: absolute;
+    top: -67px;
+    max-width: 180px;
+  }
+  .mts-hash-0003a .mts2-card-creditcards .mts2-card-creditcards__heading {
+    font-size: 18px;
+    text-align: center;
+  }
+  .mts-hash-0003a .mts2-section-creditcard-selector {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 544px) {
+  .mts-hash-0003a .mts2-card-creditcards__plastic_mobile {
+    position: absolute;
+    top: -67px;
+    max-width: 160px;
+  }
+  .mts-hash-0003a .mts2-section-creditcard-selector__heading {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 38px;
+    margin-bottom: 100px;
+  }
+}

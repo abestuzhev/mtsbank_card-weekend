@@ -1,0 +1,838 @@
+// These comments are only one line long each.
+$pinkish-red: #ea212e;
+$turquoise-blue: #00bcc7;
+$white: #ffffff;
+$black: #000000;
+$white-two: #fbfbfb;
+$black-two: #202020;
+$greyish-brown: #535151;
+$greyish-brown-two: #505050;
+$black-three: #181818;
+
+.mts-hash-0003a {
+  .mts2-section-hero__mobile-bg {
+    display: none;
+  }
+  .mts2-section-hero {
+    background-image: url('../img/credit-pay/mts2-credit-pay-main.png'),
+      linear-gradient(-247deg, #ffeeb8, #fff8e1);
+    background-repeat: no-repeat;
+    background-position: 81% center;
+    padding: 70px 0 168px;
+    &__btn {
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: -0.1px;
+      text-align: center;
+      color: $white;
+      border-radius: 4px;
+      background-color: $pinkish-red;
+      padding: 25px 40px;
+      display: inline-flex;
+      margin-top: 60px;
+      transition: 200ms all ease;
+      &:hover {
+        background-color: $white;
+        color: $pinkish-red;
+      }
+    }
+    &__subtext {
+      opacity: 0.5;
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 1.69;
+      letter-spacing: -0.1px;
+      color: $black;
+    }
+    &__percent {
+      font-family: "Futura New";
+      font-size: 58px;
+      letter-spacing: -1px;
+      color: $black;
+      margin-bottom: 0;
+      line-height: 58px;
+      margin-top: 25px;
+    }
+    &__percent-span {
+      font-size: 28px;
+    }
+    &__percent-span_3 {
+      font-size: 28px;
+      // font-family: "ALSRubl";
+    }
+    &__wrapper {
+      max-width: 500px;
+      text-align: left;
+      .mts2-section-hero__heading {
+        font-family: "Futura New";
+        font-size: 62px;
+        font-weight: bold;
+        line-height: 0.89;
+        letter-spacing: -0.2px;
+
+        color: $black;
+      }
+      .mts2-section-hero__upper-parag {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: -0.1px;
+        color: $black;
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .mts2-section-tab-nav {
+    background-color: $white;
+  }
+}
+
+.mts2-section-perks {
+  margin-top: 115px;
+  margin-bottom: 160px;
+  &__heading {
+    font-family: "Futura New";
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.47;
+    letter-spacing: 0px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 48px;
+  }
+  &__main {
+    font-family: "Futura New";
+    font-size: 58px;
+    letter-spacing: -1.3px;
+    text-align: center;
+    color: $pinkish-red;
+    line-height: 44px;
+    margin-bottom: 5px;
+    span {
+      font-size: 28px;
+      font-weight: 200;
+    }
+  }
+  &__subtext {
+    opacity: 0.5;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.69;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: $black;
+  }
+}
+
+.mts2-section-calculator {
+  &__btn {
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: $white;
+    border-radius: 4px;
+    background-color: $pinkish-red;
+    padding: 25px 40px;
+    display: inline-flex;
+    margin-top: 40px;
+    transition: 200ms all ease;
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+  &__calculator-wrapper {
+    border-radius: 4px;
+    background-color: $white;
+    border: solid 1px #ededed;
+    padding: 56px 8.5% 20px;
+  }
+  &__inner-left-wrapper {
+    max-width: 644px;
+  }
+  &__heading {
+    font-family: "Futura New";
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.47;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $black;
+    margin-bottom: 56px;
+  }
+  &__input-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+    &_rouble::after {
+      content: url('../img/credit-pay/mts2-credit-pay-input-rouble.png');
+      position: absolute;
+      right: 33px;
+      top: 33px;
+    }
+    &_month::after {
+      content: url('../img/credit-pay/mts2-credit-pay-input-month.png');
+      position: absolute;
+      right: 33px;
+      top: 33px;
+    }
+  }
+  &__text-input {
+    border-radius: 4px;
+    background-color: #fafafa;
+    border: solid 1px #d8d8d8;
+    padding: 32px 29px 17px;
+    font-family: "Lato";
+    font-size: 18px;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: $black;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__range-input {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+  &__inside-label {
+    opacity: 0.6;
+    font-family: "Lato";
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $black;
+    position: absolute;
+    left: 30px;
+    top: 14px;
+  }
+  &__calc-price-text {
+    opacity: 0.5;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: left;
+    color: black;
+    margin-bottom: 0;
+  }
+  &__description {
+    margin: 30px 0;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+  &__calc-price {
+    font-family: "Futura New";
+    font-size: 58px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: black;
+    line-height: 68px;
+    margin-bottom: 35px;
+    span {
+      font-size: 28px;
+    }
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button,
+  input::-webkit-search-cancel-button {
+    display: none;
+    -webkit-appearance: none;
+  }
+  &__checkbox {
+    display: none;
+    &:checked + label:before {
+      content: url('../img/cards/mts2-cards-checkbox.png');
+    }
+  }
+  &__checkbox-label {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.69;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: #000000;
+    cursor: pointer;
+    transition: 200ms all ease-in-out;
+    &:before {
+      content: url(../img/cards/mts2-cards-checkbox-un.png);
+      display: inline-block;
+      position: relative;
+      top: 9px;
+      margin-right: 40px;
+      left: 0px;
+    }
+  }
+}
+
+
+/*form*/
+.mts2-section-form {
+  margin-bottom: 100px;
+  &__form-wrapper {
+    border-radius: 4px;
+    background-color: $white;
+    border: solid 1px #ededed;
+    padding: 56px 8.5% 75px;
+
+    & > .row {
+      max-width: 880px;
+      margin: auto;
+    }
+  }
+
+  &__btn {
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #ea212e;
+    padding: 25px 79px;
+    display: inline-flex;
+    margin-top: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 200ms all ease;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  &__heading {
+    font-family: "Futura New";
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.47;
+    letter-spacing: 0px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 56px;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button,
+  input::-webkit-search-cancel-button {
+    display: none;
+    -webkit-appearance: none;
+  }
+  &__checkbox {
+    display: none;
+    &:checked + label:before {
+
+      content: url('../img/cards/mts2-cards-checkbox.png');
+    }
+  }
+  &__checkbox-label {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.69;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: #000000;
+    cursor: pointer;
+    transition: 200ms all ease-in-out;
+    position: relative;
+    padding-left: 40px;
+    &:before {
+      content: url(../img/cards/mts2-cards-checkbox-un.png);
+      display: inline-block;
+      position: absolute;
+      top: -3px;
+      margin-right: 70px;
+      left: 0;
+    }
+  }
+}
+
+.c-form__item {
+  margin-bottom: 45px;
+}
+.c-form__list-item {
+  margin-bottom: 22px;
+}
+
+.c-input {
+  display: inline-block;
+  padding: 26px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #fafafa;
+  border: solid 1px #d8d8d8;
+  opacity: 0.5;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: -0.1px;
+  text-align: left;
+  color: #000000;
+
+  &:focus {
+    outline:2px solid $turquoise-blue;
+    border-radius: 4px;
+  }
+}
+
+
+.mts2-section-steps {
+  text-align: center;
+  padding: 120px 0 150px;
+  .mts2-section-steps__step {
+    .mts2-section-steps__img-wrapper {
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .mts2-section-steps__header {
+      font-family: "Futura New";
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 1.29;
+      letter-spacing: -0.1px;
+      text-align: center;
+      color: $black;
+      width: 220px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    .mts2-section-steps__subtext {
+      opacity: 0.5;
+      font-family: "Lato";
+      font-size: 16px;
+      line-height: 1.69;
+      letter-spacing: -0.1px;
+      text-align: center;
+      color: $black;
+      max-width: 300px;
+      margin: auto;
+    }
+  }
+}
+
+.mts2-section-conditions {
+  &__wrapper {
+    object-fit: contain;
+    border-radius: 4px;
+    background-color: $white;
+    border: solid 1px hsl(0, 0%, 93%);
+    padding: 77px 0;
+    .row {
+      max-width: 880px;
+      margin: auto;
+    }
+  }
+
+  &__heading {
+    font-family: "Futura New";
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.47;
+    letter-spacing: 0px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 15px;
+  }
+
+  &__sub-heading {
+    font-family: "Futura New";
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.29;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $black;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  ul {
+    padding-left: 0;
+  }
+
+  &__tariffs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 35px;
+  }
+
+  &__tariffs-text {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.69;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: #000;
+    max-width: 249px;
+    margin-left: 29px;
+  }
+
+  &__tariffs-size {
+    opacity: 0.5;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.69;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: $black;
+  }
+
+  &__list-item {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.69;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: #888;
+    list-style: none;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    &:before {
+      content: url("../img/credit-pay/mts2-credit-li-bullet.png");
+      position: relative;
+      top: -2px;
+      margin-right: -6px;
+      left: -20px;
+    }
+  }
+  &__btn {
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: $white;
+    border-radius: 4px;
+    background-color: $pinkish-red;
+    padding: 25px 40px;
+    display: inline-flex;
+    margin-top: 40px;
+    transition: 200ms all ease;
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+}
+
+.mts2-section-more {
+  padding: 100px 0 150px;
+  &__plastic-wrapper {
+    width: 0%;
+  }
+  &__plastic {
+    width: 100%;
+    box-shadow: 0 0 15px -4px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    transition: 250ms all ease-in-out;
+    &_mobile {
+      position: absolute;
+      top: -47px;
+      max-width: 160px;
+    }
+  }
+  div.col-md-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__heading {
+    font-family: "Futura New";
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.47;
+    letter-spacing: 0px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 60px;
+  }
+  &__subheading {
+    font-family: "Futura New";
+    max-width: 260px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.29;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $black;
+    // margin-right: 81px;
+  }
+
+  &__card {
+    border-radius: 4px;
+    background-color: $white;
+    border: solid 1px hsl(0, 0%, 93%);
+    padding: 40px 58px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 500ms all ease-in-out;
+    min-height: 367px;
+    margin-bottom: 40px;
+    align-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .row {
+      width: 100%;
+    }
+    &_zero {
+      background-image: url(../img/credit-pay/mts2-credit-pay-woman-1.png);
+    }
+    &_one {
+      background-image: url(../img/credit-pay/mts2-credit-pay-plastic-2.png);
+    }
+    &_two {
+      background-image: url(../img/credit-pay/mts2-credit-pay-woman-2.png);
+    }
+    &:hover {
+      background-color: $pinkish-red;
+      box-shadow: 0 25px 30px 0 hsla(0, 0%, 58%, 0.25);
+    }
+    &:hover .mts2-section-more__subheading,
+    &:hover .mts2-section-more__subtext,
+    &:hover .mts2-section-more__percent,
+    &:hover .mts2-section-more__percent-span_1,
+    &:hover .mts2-section-more__percent-span_3,
+    &:hover .mts2-section-more__percent-span {
+      color: $white;
+    }
+  }
+
+  &__percent {
+    font-family: "Futura New";
+    letter-spacing: -1px;
+    text-align: left;
+    color: $pinkish-red;
+    font-size: 28px;
+    margin-top: 50px;
+  }
+
+  &__percent-span {
+    font-size: 28px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: $pinkish-red;
+  }
+
+  &__percent-span_1 {
+    font-family: "Futura New";
+    letter-spacing: -1px;
+    text-align: left;
+    color: $pinkish-red;
+    font-size: 58px;
+  }
+
+  &__percent-span_3 {
+  }
+
+  &__subtext {
+    opacity: 0.5;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: $black;
+    max-width: 150px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1300px) {
+  .mts-hash-0003a .mts2-section-hero {
+    background-position: 130% center;
+    padding: 50px;
+  }
+  .mts2-section-perks__main {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mts2-section-more__plastic-wrapper {
+    width: 100%;
+  }
+  .mts-hash-0003a .mts2-section-hero {
+    background-position: 140% center;
+    padding: 50px;
+  }
+  .mts-hash-0003a .mts2-section-hero__wrapper .mts2-section-hero__heading {
+    font-size: 32px;
+  }
+  .mts-hash-0003a .mts2-section-hero__percent {
+    font-size: 32px;
+    margin-top: 0;
+    line-height: 35px;
+  }
+
+  .mts2-section-more__card {
+    flex-flow: column;
+    padding-top: 120px;
+    background: none;
+    max-width: 280px;
+    margin: auto;
+    margin-bottom: 110px;
+    align-items: center;
+    min-height: inherit;
+  }
+  .mts2-section-more__card_zero {
+    background-image: url(../img/mts2-card-credit__percent_work-pay-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .mts2-section-more__card_one {
+    padding-top: 80px;
+  }
+  .mts2-section-more__card_two {
+    background-image: url(../img/credit-pay/mts2-credit-pay-main-vklad-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .mts2-section-more__subheading {
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+  }
+  .mts2-section-more__subtext,
+  .mts2-section-more__percent {
+    text-align: center;
+    margin: auto;
+  }
+  .mts2-section-more__card:hover .mts2-section-more__plastic {
+    transform: translateY(-10px);
+    box-shadow: 0px 37px 42px -5px rgba(0, 0, 0, 0.36);
+  }
+}
+
+@media (max-width: 900px) {
+  .mts-hash-0003a .mts2-section-hero {
+    background-position: 170% center;
+  }
+}
+
+@media (max-width: 768px) {
+  .mts2-section-perks__subtext {
+    margin-bottom: 40px;
+  }
+  .mts2-section-perks {
+    margin: 60px 0;
+  }
+  .mts2-section-perks__main {
+    font-size: 38px;
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .mts2-section-conditions .container,
+  .mts2-section-calculator .container {
+    padding: 0;
+  }
+  .mts2-section-conditions__heading {
+    font-size: 28px;
+  }
+  .mts2-section-conditions__tariffs-size {
+    font-size: 13px;
+  }
+  .mts2-section-conditions__sub-heading {
+    margin-bottom: 14px;
+    margin-top: 30px;
+  }
+  .mts2-section-conditions__list-item {
+    font-size: 13px;
+  }
+  .mts2-section-calculator__calculator-wrapper {
+    border-radius: 0;
+    border: none;
+    border-top: solid 1px #ededed;
+    border-bottom: solid 1px #ededed;
+    padding: 56px 20px 20px;
+  }
+  .mts2-section-calculator__checkbox-label {
+    font-size: 13px;
+    display: flex;
+  }
+  .mts2-section-calculator__checkbox-label:before {
+    margin-right: 10px;
+    left: 0px;
+    top: -7px;
+  }
+  .mts-hash-0003a .mts2-section-hero__wrapper {
+    text-align: center;
+  }
+  .mts-hash-0003a .mts2-section-hero__wrapper .mts2-section-hero__upper-parag {
+    font-family: "Futura New";
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+  .mts-hash-0003a .mts2-section-hero__wrapper .mts2-section-hero__heading {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+  .mts-hash-0003a .mts2-section-hero__mobile-bg {
+    display: block;
+    width: 100%;
+  }
+  .mts-hash-0003a .mts2-section-hero {
+    background-image: none;
+    background: linear-gradient(-247deg, #ffeeb8, #fff8e1);
+  }
+  .mts-hash-0003a .mts2-section-hero__btn {
+    margin-top: 10px;
+  }
+  .mts-hash-0003a .mts2-section-hero__subtext {
+    font-size: 14px;
+  }
+  .mts2-section-calculator__heading {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  .mts2-section-calculator__btn {
+    margin-top: 0px;
+  }
+  .mts2-section-more {
+    padding: 40px 0;
+  }
+  .mts2-section-more__heading {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+
+  .mts2-section-more__percent {
+    font-size: 28px;
+    margin-top: 70px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 544px) {
+  .mts-hash-0003a .mts2-section-hero {
+    padding: 40px 0;
+  }
+  .mts2-section-calculator__calculator-wrapper {
+    padding: 40px;
+  }
+  .mts2-section-steps {
+    padding: 60px 0;
+  }
+  .mts2-section-conditions__tariffs-text {
+    font-size: 13px;
+    line-height: 1.39;
+  }
+  .mts2-section-conditions__btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
