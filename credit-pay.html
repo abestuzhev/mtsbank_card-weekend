@@ -217,24 +217,31 @@
               <h2 class="mts2-section-calculator__heading">Рассчитайте Ваш кредит</h2>
             </div>
             <div class="col-md-8">
-              <div class="mts2-section-calculator__inner-left-wrapper">
-                <div class="mts2-section-calculator__input-wrapper mts2-section-calculator__input-wrapper_rouble d-flex flex-column">
-                <input class="mts2-section-calculator__text-input mts2-section-calculator__text-input_rouble" type="number" value="15"  data-text-num="1">
-                <span class="mts2-section-calculator__inside-label">Сумма кредита</span>
-                <input class="mts2-section-calculator__range-input" type="range" data-range-num="1" min="1" max="1000" step="1" value="15">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mts2-section-calculator__inner-left-wrapper">
+                    <div class="mts2-section-calculator__input-wrapper mts2-section-calculator__input-wrapper_rouble d-flex flex-column">
+                      <input class="mts2-section-calculator__text-input mts2-section-calculator__text-input_rouble" type="number" value="15"  data-text-num="1">
+                      <span class="mts2-section-calculator__inside-label">Сумма кредита</span>
+                      <input class="mts2-section-calculator__range-input" type="range" data-range-num="1" min="1" max="1000" step="1" value="15">
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mts2-section-calculator__input-wrapper mts2-section-calculator__input-wrapper_month d-flex flex-column">
+                  <input id="js-amount-input" class="mts2-section-calculator__text-input mts2-section-calculator__text-input_month" type="number" value="15" data-text-num="2" data-rangeslider>
+                  <span class="mts2-section-calculator__inside-label">Срок кредитования</span>
+                  <input  id="js-amount-range" class="mts2-section-calculator__range-input" type="range" data-range-num="2" min="1" max="1000" step="1" value="15">
+                </div>
               </div>
 
-              <div class="mts2-section-calculator__input-wrapper mts2-section-calculator__input-wrapper_month d-flex flex-column">
-                <input id="js-amount-input" class="mts2-section-calculator__text-input mts2-section-calculator__text-input_month" type="number" value="15" data-text-num="2" data-rangeslider>
-                <span class="mts2-section-calculator__inside-label">Срок кредитования</span>
-                <input  id="js-amount-range" class="mts2-section-calculator__range-input" type="range" data-range-num="2" min="1" max="1000" step="1" value="15">
-              </div>
+
               <!-- <input type="range" id="js-amount-range" value="0" min="0" max="100"> -->
 
 
               <!-- <input type="number" id="js-amount-input" value="0" min="0" max="100"></input> -->
 
-
+              <!--
               <input id="mts2-section-calculator__checkbox1" class="mts2-section-calculator__checkbox" type="checkbox" name="" value=""/>
               <label for="mts2-section-calculator__checkbox1" class="mts2-section-calculator__checkbox-label">Я получаю зарплату на счет МТС Банка</label>
               <br>
@@ -243,7 +250,9 @@
               <br>
               <input id="mts2-section-calculator__checkbox3" class="mts2-section-calculator__checkbox" type="checkbox" name="" value="">
               <label for="mts2-section-calculator__checkbox3" class="mts2-section-calculator__checkbox-label">Я абонент МТС</label>
-              <p class="mts2-section-calculator__description ">Расчет носит предварительный характер. Точная сумма ежемесячного платежа будет определена Банком по&nbsp;результатам рассмотрения кредитной заявки.</p></div>
+              <p class="mts2-section-calculator__description ">Расчет носит предварительный характер. Точная сумма ежемесячного платежа будет определена Банком по&nbsp;результатам рассмотрения кредитной заявки.</p>-->
+              </div>
+
             </div>
             <div class="col-md-4">
               <p class="mts2-section-calculator__calc-price-text">Ежемесячный платеж</p>
@@ -339,6 +348,17 @@
                 <p class="mts2-section-steps__subtext">Приходите в&nbsp;выбранное отделение банка и&nbsp;получите одобренную сумму</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mts2-section-pay-mobile mts-reveal">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-8"></div>
           </div>
         </div>
       </section>
