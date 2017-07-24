@@ -382,6 +382,39 @@ $black-three: #181818;
   }
 }
 
+/*week*/
+.mts2-section-week {
+  &__title {
+
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+  }
+
+  &__table {
+    width: 100%;
+
+    tr {
+      width: 100%;
+    }
+
+    &-item {
+      color: #000;
+      opacity: .1;
+      font-family: Arial,sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 0.9;
+      letter-spacing: -0.1px;
+    }
+  }
+}
 
 .mts2-section-steps {
   text-align: center;

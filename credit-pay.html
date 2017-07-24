@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>МТСБАНК карты</title>
+  <title>МТС Деньги Weekend</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -225,15 +225,16 @@
                       <span class="mts2-section-calculator__inside-label">Сумма кредита</span>
                       <input class="mts2-section-calculator__range-input" type="range" data-range-num="1" min="1" max="1000" step="1" value="15">
                     </div>
+                  </div>
                 </div>
+                <div class="col-md-6">
+                  <div class="mts2-section-calculator__input-wrapper mts2-section-calculator__input-wrapper_month d-flex flex-column">
+                    <input id="js-amount-input" class="mts2-section-calculator__text-input mts2-section-calculator__text-input_month" type="number" value="15" data-text-num="2" data-rangeslider>
+                    <span class="mts2-section-calculator__inside-label">Срок кредитования</span>
+                    <input  id="js-amount-range" class="mts2-section-calculator__range-input" type="range" data-range-num="2" min="1" max="1000" step="1" value="15">
+                  </div>
               </div>
-              <div class="col-md-6">
-                <div class="mts2-section-calculator__input-wrapper mts2-section-calculator__input-wrapper_month d-flex flex-column">
-                  <input id="js-amount-input" class="mts2-section-calculator__text-input mts2-section-calculator__text-input_month" type="number" value="15" data-text-num="2" data-rangeslider>
-                  <span class="mts2-section-calculator__inside-label">Срок кредитования</span>
-                  <input  id="js-amount-range" class="mts2-section-calculator__range-input" type="range" data-range-num="2" min="1" max="1000" step="1" value="15">
-                </div>
-              </div>
+
 
 
               <!-- <input type="range" id="js-amount-range" value="0" min="0" max="100"> -->
@@ -252,14 +253,52 @@
               <label for="mts2-section-calculator__checkbox3" class="mts2-section-calculator__checkbox-label">Я абонент МТС</label>
               <p class="mts2-section-calculator__description ">Расчет носит предварительный характер. Точная сумма ежемесячного платежа будет определена Банком по&nbsp;результатам рассмотрения кредитной заявки.</p>-->
               </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mts2-section-calculator__inner-left-wrapper">
+                    <div class="mts2-section-calculator__input-wrapper mts2-section-calculator__input-wrapper_rouble d-flex flex-column">
+                      <input class="mts2-section-calculator__text-input mts2-section-calculator__text-input_category" type="number" value="15000"  data-text-num="3">
+                      <span class="mts2-section-calculator__inside-label">Траты по выделенным категориям</span>
+                      <input class="mts2-section-calculator__range-input" type="range" data-range-num="3" min="1" max="100000" step="1" value="68 500">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <p class="mts2-section-calculator__calc-price"><span>= </span>54 820<span> ₽</span></p>
+                </div>
+              </div>
 
             </div>
             <div class="col-md-4">
-              <p class="mts2-section-calculator__calc-price-text">Ежемесячный платеж</p>
-              <p class="mts2-section-calculator__calc-price">54 820<span> ₽</span></p>
-              <p class="mts2-section-calculator__calc-price-text">Переплата за весь срок</p>
-              <p class="mts2-section-calculator__calc-price">267 902<span> ₽</span></p>
-              <a href="#/" class="mts2-section-calculator__btn">Получить кредит</a>
+              <div class="mts2-section-week">
+                <div class="mts2-section-week__title"></div>
+                <ul class="mts2-section-week__list">
+                  <li class="mts2-section-week__item">
+                    Совершайте покупки в течение недели
+                    <table class="mts2-section-week__table">
+                      <tr>
+                        <td class="mts2-section-week__table-item">ПН</td>
+                        <td class="mts2-section-week__table-item">ВТ</td>
+                        <td class="mts2-section-week__table-item">СР</td>
+                        <td class="mts2-section-week__table-item">ЧТ</td>
+                        <td class="mts2-section-week__table-item">ПН</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li class="mts2-section-week__item">
+                    Получайте весь кэшбек с покупок в следующую пятницу
+                    <table class="mts2-section-week__table">
+                      <tr>
+                        <td class="mts2-section-week__table-item">ПН</td>
+                        <td class="mts2-section-week__table-item">ВТ</td>
+                        <td class="mts2-section-week__table-item">СР</td>
+                        <td class="mts2-section-week__table-item">ЧТ</td>
+                        <td class="mts2-section-week__table-item">ПН</td>
+                      </tr>
+                    </table>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           </div>
@@ -282,6 +321,8 @@
             var $amount = $('input[data-text-num="1"]');
             var $rangeslider2 = $('input[data-range-num="2"]');
             var $amount2 = $('input[data-text-num="2"]');
+            var $rangeslider3 = $('input[data-range-num="3"]');
+            var $amount3 = $('input[data-text-num="3"]');
 
             $rangeslider
               .rangeslider({
@@ -297,12 +338,22 @@
                 .on('input', function() {
                   $amount2[0].value = this.value;
                 });
+              $rangeslider3
+                .rangeslider({
+                  polyfill: false
+                })
+                .on('input', function() {
+                  $amount3[0].value = this.value;
+                });
 
             $amount.on('input', function() {
               $rangeslider.val(this.value).change();
             });
             $amount2.on('input', function() {
               $rangeslider2.val(this.value).change();
+            });
+            $amount3.on('input', function() {
+              $rangeslider3.val(this.value).change();
             });
           });
 
