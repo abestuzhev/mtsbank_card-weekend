@@ -62,10 +62,10 @@ $black-three: #181818;
       // font-family: "ALSRubl";
     }
     &__wrapper {
-      max-width: 500px;
+      max-width: 865px;
       text-align: left;
       .mts2-section-hero__heading {
-        font-family: "Futura New";
+        font-family: "Futura New",sans-serif;
         font-size: 62px;
         font-weight: bold;
         line-height: 0.89;
@@ -88,6 +88,50 @@ $black-three: #181818;
   }
 }
 
+/*advantage*/
+.mts2-section-advantage {
+  margin-top: -90px;
+
+  &__card {
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #ededed;
+    transition: 200ms all ease-in-out;
+    padding: 63px 70px;
+    min-height: 293px;
+
+    &:hover {
+      box-shadow: 0 25px 30px 0 rgba(149, 149, 149, 0.25);
+      transition: 200ms all ease-in-out;
+    }
+
+    &-icon {
+      margin-bottom: 30px;
+    }
+
+    &-title {
+      font-family: "Futura New",sans-serif;
+      font-size: 23px;
+      font-weight: bold;
+      line-height: 1.17;
+      letter-spacing: -0.1px;
+      text-align: left;
+      color: #000000;
+      margin-bottom: 25px;
+    }
+
+    &-text {
+      opacity: 0.5;
+      font-family: Lato, sans-serif;
+      font-size: 16px;
+      line-height: 1.69;
+      letter-spacing: -0.1px;
+      text-align: left;
+      color: #000000;
+    }
+  }
+}
+
 .mts2-section-perks {
   margin-top: 115px;
   margin-bottom: 160px;
@@ -107,7 +151,7 @@ $black-three: #181818;
     letter-spacing: -1.3px;
     text-align: center;
     color: $pinkish-red;
-    line-height: 44px;
+    //line-height: 44px;
     margin-bottom: 5px;
     span {
       font-size: 28px;
@@ -384,21 +428,45 @@ $black-three: #181818;
 
 /*week*/
 .mts2-section-week {
+  margin-top: 30px;
+  padding-left: 23px;
   &__title {
-
+    font-family: "Futura New", sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 2.17;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 22px;
   }
 
   &__list {
-
+    padding: 0;
   }
 
   &__item {
     margin-bottom: 30px;
-
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    line-height: 1.69;
+    letter-spacing: -0.1px;
+    color: #989898;
+    &::before {
+      content: '●';
+      position: absolute;
+      color: $pinkish-red;
+      top: 0;
+      left: 0;
+    }
   }
 
   &__table {
     width: 100%;
+    margin-top: 11px;
 
     tr {
       width: 100%;
@@ -407,14 +475,83 @@ $black-three: #181818;
     &-item {
       color: #000;
       opacity: .1;
-      font-family: Arial,sans-serif;
+      font-family: "Futura New", sans-serif;
       font-size: 30px;
       font-weight: bold;
       line-height: 0.9;
       letter-spacing: -0.1px;
+
+      &--color {
+        color: $pinkish-red;
+        opacity: 1;
+      }
     }
   }
 }
+
+/*pay mobile*/
+.mts2-section-pay-mobile {
+  background: url(../img/simple-service.png) 57% 0 no-repeat;
+
+  &__pay-wrapper {
+    padding: 248px 0 305px;
+  }
+
+  &__icon {
+    margin-bottom: 30px;
+  }
+
+  &__heading {
+    ont-family: "Futura New";
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.47;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $black;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    pacity: 0.5;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.69;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 18px;
+  }
+
+  &__pay-list {
+
+  }
+
+  &__pay-item {
+    display: inline-block;
+    margin-right: 20px;
+    transition: 200ms all ease-in-out;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover .mts2-section-pay-mobile__icons_hover {
+      opacity: 1;
+      transition: 200ms all ease-in-out;
+    }
+  }
+
+  &__icons {
+
+
+    &_hover {
+      opacity: 0;
+    }
+  }
+}
+
+/*steps*/
 
 .mts2-section-steps {
   text-align: center;
