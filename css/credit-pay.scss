@@ -14,11 +14,14 @@ $black-three: #181818;
     display: none;
   }
   .mts2-section-hero {
-    background-image: url('../img/credit-pay/mts2-credit-pay-main.png'),
-      linear-gradient(-247deg, #ffeeb8, #fff8e1);
+    background-image: url('../img/mts2-banner-img.jpg');
+    //background-image: url('../img/mts2-banner-img.jpg'),
+    //linear-gradient(-247deg, #ffeeb8, #fff8e1);
     background-repeat: no-repeat;
     background-position: 81% center;
-    padding: 70px 0 168px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 85px 0 228px;
     &__btn {
       font-family: Lato;
       font-size: 16px;
@@ -43,13 +46,13 @@ $black-three: #181818;
       font-size: 16px;
       line-height: 1.69;
       letter-spacing: -0.1px;
-      color: $black;
+      color: $white;
     }
     &__percent {
       font-family: "Futura New";
       font-size: 58px;
       letter-spacing: -1px;
-      color: $black;
+      color: $white;
       margin-bottom: 0;
       line-height: 58px;
       margin-top: 25px;
@@ -71,14 +74,14 @@ $black-three: #181818;
         line-height: 0.89;
         letter-spacing: -0.2px;
 
-        color: $black;
+        color: $white;
       }
       .mts2-section-hero__upper-parag {
         font-family: Lato;
         font-size: 16px;
         font-weight: 600;
         letter-spacing: -0.1px;
-        color: $black;
+        color: $white;
         margin-bottom: 24px;
       }
     }
@@ -90,7 +93,20 @@ $black-three: #181818;
 
 /*advantage*/
 .mts2-section-advantage {
-  margin-top: -90px;
+  margin-top: -125px;
+
+  &__layout {
+    margin-bottom: 23px;
+  }
+
+  &__col {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.333333%;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0 15px;
+  }
 
   &__card {
     border-radius: 4px;
@@ -98,7 +114,7 @@ $black-three: #181818;
     border: solid 1px #ededed;
     transition: 200ms all ease-in-out;
     padding: 63px 70px;
-    min-height: 293px;
+    height: 100%;
 
     &:hover {
       box-shadow: 0 25px 30px 0 rgba(149, 149, 149, 0.25);
@@ -107,6 +123,14 @@ $black-three: #181818;
 
     &-icon {
       margin-bottom: 30px;
+      height: 47px;
+      vertical-align: bottom;
+      position: relative;
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
     }
 
     &-title {
@@ -129,6 +153,82 @@ $black-three: #181818;
       text-align: left;
       color: #000000;
     }
+  }
+
+  &__sub-card {
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #ededed;
+    transition: 200ms all ease-in-out;
+    padding: 63px 70px;
+    height: 100%;
+    text-align: center;
+
+
+    &:hover {
+      box-shadow: 0 25px 30px 0 rgba(149, 149, 149, 0.25);
+      transition: 200ms all ease-in-out;
+    }
+
+    &--small {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      &-title {
+        text-align: center;
+        font-family: "Futura New",sans-serif;
+        font-size: 58px;
+        letter-spacing: -1.3px;
+        color: #ea212e;
+
+        span {
+          font-size: 28px;
+        }
+      }
+    }
+
+    &-title {
+      font-family: "Futura New",sans-serif;
+      font-size: 23px;
+      font-weight: bold;
+      line-height: 1.17;
+      letter-spacing: -0.1px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 44px;
+    }
+
+    &-icon {
+      margin-bottom: 35px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-text {
+      font-family: Lato, sans-serif;
+      font-size: 16px;
+      line-height: 1.69;
+      letter-spacing: -0.1px;
+      text-align: center;
+      color: #858585;
+      margin-bottom: 20px;
+
+      span {
+        color: $pinkish-red;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__card-mobile {
+    display: none;
   }
 }
 
@@ -428,8 +528,9 @@ $black-three: #181818;
 
 /*week*/
 .mts2-section-week {
-  margin-top: 30px;
+  margin-top: -70px;
   padding-left: 23px;
+
   &__title {
     font-family: "Futura New", sans-serif;
     font-size: 23px;
@@ -491,7 +592,8 @@ $black-three: #181818;
 
 /*pay mobile*/
 .mts2-section-pay-mobile {
-  background: url(../img/simple-service.png) 57% 0 no-repeat;
+  background: url(../img/simple-service.png) 57% 50% no-repeat;
+
 
   &__pay-wrapper {
     padding: 248px 0 305px;
@@ -502,7 +604,7 @@ $black-three: #181818;
   }
 
   &__heading {
-    ont-family: "Futura New";
+    font-family: "Futura New";
     font-size: 34px;
     font-weight: bold;
     line-height: 1.47;
@@ -513,7 +615,7 @@ $black-three: #181818;
   }
 
   &__text {
-    pacity: 0.5;
+    opacity: 0.5;
     font-family: Lato;
     font-size: 16px;
     line-height: 1.69;
@@ -819,11 +921,38 @@ $black-three: #181818;
 
 @media (max-width: 1300px) {
   .mts-hash-0003a .mts2-section-hero {
-    background-position: 130% center;
+  //  background-position: 130% center;
     padding: 50px;
   }
+
+  .mts2-section-advantage {
+    margin-top: 40px;
+  }
+
   .mts2-section-perks__main {
     font-size: 48px;
+  }
+
+  .mts2-section-pay-mobile{
+    -webkit-background-size:cover;
+    background-size: cover;
+  }
+
+  .mts2-section-pay-mobile__pay-wrapper {
+    padding: 120px 0;
+  }
+
+  .mts2-section-advantage__col {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .mts2-section-advantage__sub-card,
+  .mts2-section-advantage__sub-card--small {
+    display: none;
   }
 }
 
@@ -832,7 +961,7 @@ $black-three: #181818;
     width: 100%;
   }
   .mts-hash-0003a .mts2-section-hero {
-    background-position: 140% center;
+  //  background-position: 140% center;
     padding: 50px;
   }
   .mts-hash-0003a .mts2-section-hero__wrapper .mts2-section-hero__heading {
@@ -883,10 +1012,57 @@ $black-three: #181818;
   }
 }
 
-@media (max-width: 900px) {
-  .mts-hash-0003a .mts2-section-hero {
-    background-position: 170% center;
+@media (max-width: 992px) {
+  .mts2-section-calculator__layout {
+    order: 2;
   }
+
+  .mts2-section-week__layout {
+    order: 1;
+  }
+
+  .mts2-section-week {
+    padding: 0;
+    margin:0;
+  }
+
+  .mts2-section-week__title {
+    display: none;
+  }
+
+  .mts2-section-pay-mobile{
+    background-position: 30% 50%;
+  }
+  
+  .mts2-section-advantage__card {
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      width: 11px;
+      height: 9px;
+      background: url(../img/group-copy.png) 0 0 no-repeat;
+    }
+  }
+
+  .mts2-section-advantage__card.active-advantage::after {
+    content: '';
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 900px) {
+  //.mts-hash-0003a .mts2-section-hero {
+  //  background-position: 170% center;
+  //}
 }
 
 @media (max-width: 768px) {
@@ -907,8 +1083,12 @@ $black-three: #181818;
   .mts2-section-calculator .container {
     padding: 0;
   }
-  .mts2-section-conditions__heading {
+  .mts2-section-conditions__heading,
+  .mts2-section-form__heading,
+  .mts2-section-pay-mobile__heading,
+  .mts2-section-perks__heading {
     font-size: 28px;
+    margin-bottom: 28px;
   }
   .mts2-section-conditions__tariffs-size {
     font-size: 13px;
@@ -950,12 +1130,14 @@ $black-three: #181818;
     margin-bottom: 32px;
   }
   .mts-hash-0003a .mts2-section-hero__mobile-bg {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 16px;
   }
   .mts-hash-0003a .mts2-section-hero {
+    text-align: center;
     background-image: none;
-    background: linear-gradient(-247deg, #ffeeb8, #fff8e1);
+    background: linear-gradient(0deg, #376ec4, #90cbe9);
   }
   .mts-hash-0003a .mts2-section-hero__btn {
     margin-top: 10px;
@@ -966,6 +1148,7 @@ $black-three: #181818;
   .mts2-section-calculator__heading {
     font-size: 28px;
     line-height: 1.3;
+    margin-bottom: 28px;
   }
   .mts2-section-calculator__btn {
     margin-top: 0px;
@@ -984,15 +1167,67 @@ $black-three: #181818;
     margin-top: 70px;
     line-height: 40px;
   }
+
+  .mts2-section-pay-mobile__pay-wrapper {
+    padding: 40px 0 100px;
+  }
+
+  .mts2-section-pay-mobile__pay-item {
+    display: block;
+  }
+  .mts2-section-pay-mobile__text {
+    margin-bottom: 32px;
+  }
+
+  .mts2-section-pay-mobile{
+    -webkit-background-size: 129%;
+    background-size: 129%;
+    background-position: -14% 220px;
+  }
 }
 
 @media (max-width: 544px) {
   .mts-hash-0003a .mts2-section-hero {
     padding: 40px 0;
   }
-  .mts2-section-calculator__calculator-wrapper {
-    padding: 40px;
+
+  .mts2-section-advantage {
+    margin: 0;
   }
+  .mts2-section-advantage .container {
+    padding: 0;
+  }
+
+  .mts2-section-advantage__card {
+    padding: 40px 20px 30px;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  .mts2-section-advantage__card-icon {
+    margin-bottom: 20px;
+  }
+
+  .mts2-section-advantage__card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .mts2-section-advantage__card-text {
+    font-size: 14px;
+  }
+
+  .mts2-section-calculator__calculator-wrapper {
+    padding: 40px 20px;
+  }
+
+  .mts2-section-calculator__calc-price {
+    padding: 0;
+    margin: 0;
+  }
+
   .mts2-section-steps {
     padding: 60px 0;
   }
@@ -1000,9 +1235,32 @@ $black-three: #181818;
     font-size: 13px;
     line-height: 1.39;
   }
-  .mts2-section-conditions__btn {
+  .mts2-section-conditions__btn,
+  .mts2-section-form__btn {
     display: block;
     text-align: center;
     width: 100%;
   }
+
+
+  .mts2-section-form__form-wrapper {
+    padding: 40px 0;
+  }
+
+  .mts2-section-pay-mobile{
+    -webkit-background-size: 135%;
+    background-size: 161%;
+    background-position: 12% 260px;
+  }
+
+  .mts2-section-pay-mobile__pay-wrapper {
+    padding: 40px 0;
+  }
 }
+//
+//@media (max-width: 370px) {
+//
+//  .mts2-section-pay-mobile{
+//    background-position: 12% 320px;
+//  }
+//}
