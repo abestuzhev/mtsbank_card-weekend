@@ -94,6 +94,7 @@ $black-three: #181818;
 /*advantage*/
 .mts2-section-advantage {
   margin-top: -125px;
+  margin-bottom: 80px;
 
   &__layout {
     margin-bottom: 23px;
@@ -115,10 +116,19 @@ $black-three: #181818;
     transition: 200ms all ease-in-out;
     padding: 63px 70px;
     height: 100%;
+    cursor: pointer;
+    position: relative;
 
     &:hover {
       box-shadow: 0 25px 30px 0 rgba(149, 149, 149, 0.25);
       transition: 200ms all ease-in-out;
+    }
+    &:hover.mts2-section-advantage__sub-card {
+      position: absolute;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      display: block;
     }
 
     &-icon {
@@ -163,6 +173,7 @@ $black-three: #181818;
     padding: 63px 70px;
     height: 100%;
     text-align: center;
+    display: none;
 
 
     &:hover {
@@ -176,6 +187,7 @@ $black-three: #181818;
       left: 50%;
       transform: translateX(-50%);
       text-align: center;
+      display: none;
       &-title {
         text-align: center;
         font-family: "Futura New",sans-serif;
@@ -229,6 +241,34 @@ $black-three: #181818;
 
   &__card-mobile {
     display: none;
+    text-align: left;
+
+    .mts2-section-advantage__sub-card--small-title {
+      text-align: left;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .mts2-section-advantage__sub-card-title {
+      text-align: left;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .mts2-section-advantage__sub-card--small-text,
+    .mts2-section-advantage__sub-card-text {
+      text-align: left;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .mts2-section-advantage__col {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 25%;
+      -ms-flex: 0 0 25;
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
   }
 }
 
