@@ -117,5 +117,5 @@ $(document).ready(function() {
         120
     );
 
-    $('.js-phone-number').mask('0000-0000');
+   
 });
